@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Loja Corinthians</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles/carrinho.css">
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <link rel="stylesheet" href="src/styles/produtos.css" />
+    <link rel="stylesheet" href="src/styles/historia.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="src/javascript/loja.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Meu Carrinho</h1>
+  </header>
+
+  <main class="carrinho-container">
+    <div class="produto">
+      <img src="camisa-corinthians.png" alt="Camisa Corinthians 24/25" class="produto-img">
+      <div class="produto-detalhes">
+        <h2>Camisa Corinthians I 24/25 - Mateuzinho Nº 2</h2>
+        <p>Tamanho: M</p>
+        <p>Cor: Branco e Preto</p>
+        <p>Preço unitário: <strong id="preco-unitario">332.49</strong></p>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        <button class="remover">Remover</button>
+      </div>
+    </div>
+
+    <div class="resumo">
+      <h3>Resumo do Pedido</h3>
+      <label for="cep">CEP para entrega:</label>
+      <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" required>
+      <p>Subtotal: <strong id="subtotal">R$ 332,49</strong></p>
+      <p>Frete: <strong>Grátis</strong></p>
+      <p>Total: <strong id="total">R$ 332,49</strong></p>
+      <button class="comprar">Finalizar Compra</button>
+    </div>
+  </main>
+
+  <script>
+    function carregarCarrinho() {
+      const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+      const container = document.querySelector('.carrinho-container');
+      const resumo = document.querySelector('.resumo');
+      container.innerHTML = ''; // Limpa produtos antigos
+
+      let subtotal = 0;
+
+      carrinho.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'produto';
+        div.innerHTML = `
+          <div class="produto-detalhes">
+            <h2>${item.produto}</h2>
+            <p>Quantidade: ${item.quantidade}</p>
+            <button class="remover">Remover</button>
+          </div>
+        `;
+        div.querySelector('.remover').addEventListener('click', () => {
+          removerDoCarrinho(index);
+        });
+        container.appendChild(div);
+
+        const preco = 79.99; // Troque pelo preço real do produto
+        subtotal += preco * item.quantidade;
+      });
+
+      container.appendChild(resumo);
+
+      document.getElementById('subtotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+      document.getElementById('total').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+
+      // Adicione o event listener aqui!
+      const btnComprar = document.querySelector('.comprar');
+      if (btnComprar) {
+        btnComprar.onclick = function (e) {
+          e.preventDefault();
+          const cep = document.getElementById('cep').value.trim();
+          if (!cep) {
+            alert('Por favor, informe o CEP para entrega.');
+            return;
+          }
+          localStorage.removeItem('carrinho');
+          carregarCarrinho();
+          alert('Sua compra foi realizada com sucesso!');
+        };
+      }
+    }
+
+    function removerDoCarrinho(index) {
+      let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+      carrinho.splice(index, 1);
+      localStorage.setItem('carrinho', JSON.stringify(carrinho));
+      carregarCarrinho();
+    }
+
+    carregarCarrinho();
+
+    const precoUnitario = parseFloat(document.getElementById('preco-unitario').innerText);
+    const quantidadeInput = document.getElementById('quantidade');
+    const subtotalEl = document.getElementById('subtotal');
+    const totalEl = document.getElementById('total');
+
+    quantidadeInput.addEventListener('input', () => {
+      const quantidade = parseInt(quantidadeInput.value) || 1;
+      const novoSubtotal = (precoUnitario * quantidade).toFixed(2).replace('.', ',');
+      subtotalEl.textContent = `R$ ${novoSubtotal}`;
+      totalEl.textContent = `R$ ${novoSubtotal}`;
+    });
+  </script>
+</body>
+</html>
+``` 

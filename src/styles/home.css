@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Lilita+One&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tagesschrift&display=swap');@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Lilita+One&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tagesschrift&display=swap');
+
+/* Subtract */
+
+
+/* Header */
+
+
+
+/* Logo com imagem e texto */
+
+.titulo {
+    color: #085A8C;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 40px;
+
+}
+
+.titulo i.fa-flag {
+    font-size: 38px; /* Aumenta o tamanho do ícone */
+    color: #23A5D9;     /* ou a cor que quiser */
+
+}
+
+.caixa-principal {
+        background-image: url("../Imagens/ProBG/MN.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 100%; /* ocupa toda a largura da tela */
+        height: 100vh;
+        margin: 10px auto; /* centraliza horizontalmente */
+        
+    
+    }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.home {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 10px;
+    padding: 5px;
+    color: #085A8C;
+    text-decoration: none;
+}
+.home:hover {
+    color: #99E2F2;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.menu li {
+    color: #23A5D9;
+    list-style: none;
+    margin-right: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 20px;
+}
+.menu li:hover {
+    color: #120101;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+.link-menu {
+    color: #120101;
+    text-decoration: none;
+    
+}
+.link-menu:hover {
+    color: #085A8C;
+    text-decoration: none;
+}
+
+.bem-vindo {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 20px;
+    color: #120101;
+    text-align: left;
+    margin-top: 100px;
+}
+.bem-vindo span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #085A8C;
+    text-decoration: none;
+    margin: auto;
+}
+
+.bem-vindo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    margin: auto;
+    text-decoration: none;
+    position: left;
+    color: #085A8C;    
+
+}
+.bem-vindo p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #120101;
+    text-decoration: none;
+    margin: auto;
+}
+/*Rodape*/
+
+.footer-content{
+    background-color: #062540;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-content h5 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.social {
+    font-family: 'montserrat', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    color: #fff;
+    text-decoration: none;
+}
+.social a {
+    color: #fff;
+    text-decoration: none;
+}
+.social a:hover {
+    color: #99E2F2;
+    text-decoration: none;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+/* Botão flutuante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #085A8C; /* Cor de fundo */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #062540; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+.floating-button i {
+    font-size: 20px;
+}
+/* Botão de carrinho flutuante */
+.cart-floating-button {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: #085A8C; /* Cor de fundo */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-floating-button:hover {
+    background-color: #062540; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+.cart-floating-button i {
+    font-size: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #F2AA6B;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Adicione ao seu CSS */
+.confirmacao-carrinho {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  z-index: 10;
+  opacity: 0.95;
+  animation: fadeOut 1.2s forwards;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* Botoes de Tamanho */
+.tamanho  {
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom:5px; ;
+}

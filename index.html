@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <link rel="stylesheet" href="src/styles/produtos.css" />
+    <link rel="stylesheet" href="src/styles/historia.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="src/javascript/loja.js"></script>
+    <title>MANDO NACIONAL</title>
+  </head>
+
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%; /* ocupa toda a largura da tela */
+        height: 100vh;
+    }
+  </style>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <div class="topo"></div>
+      <svg class="onda-header" viewBox="0 0 500 60" preserveAspectRatio="none">
+        <path d="M0,40 Q125,80 250,40 T500,40 L500,0 L0,0 Z" fill="#23A5D9"/>
+      </svg>
+      <!-- ...seu conteúdo do header... -->
+       <div class="titulo">MANDO NACIONAL 
+         <i class="fa-solid fa-flag"></i>
+       </div>
+    </header> 
+    <p>
+    <!-- Menu -->   
+    <div class="caixa-principal">
+        <nav>
+          <h2 class="home"><a></a></h2>
+            <ul class="menu">
+                <li><a class="link-menu" href="https://www.canva.com/design/DAGnbnJu2T0/RvwBy093Qki1NLpSnDgK2Q/view?utm_content=DAGnbnJu2T0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb6bf4d059f">Briefing</a></li>
+                <li><a class="link-menu" href="#produtos">Produtos</a></li>
+                <li><a class="link-menu" href="#Sobre">Sobre</a></li>
+                <li><a class="link-menu" href="https://chat.whatsapp.com/H4S2BnGdQhzLpBWlGooQXx" target="_blank">Fale Conosco  <i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>    
+        <nav>
+        <p></p>  
+        <div class="bem-vindo">
+            <h2>Bem-vindo à nossa loja!</h2>
+            <h1>MANTO<br>NACIONAL</h1>
+            <p>Explore nossos produtos<br>incríveis e aproveite as<br><span>melhores ofertas.</span></p>
+        </div>    
+    </div>
+
+                <!-- seção de produtos -->
+    <section class="produtos A" id="produtos">
+        <div class="container">
+          <p>
+        <div class="card">
+        <img src="src/Imagens/COR.jpg" alt="Camisa1">
+        <div class="title">Camisa Corinthians Degrade</div>
+         <div class="description">Nosso eterno Corinthians, Timão do Coração</div>
+        <label for="tamanho-1">Tamanho:</label>
+        <select class="tamanho" id="tamanho-1">
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+        </select>
+        <a href="#" class="button">R$ 299,99</a>
+        
+        <!-- Botões de carrinho -->
+        <div class="cart-controls">
+            <button class="decrease">-</button>
+            <span class="quantity">0</span>
+            <button class="increase">+</button>
+        </div>
+        </div>
+
+      
+          <div class="card">
+            <img src="src/Imagens/SAO.jpg" alt="Camisa2">
+            <div class="title">Camisa São Paulo</div>
+            <div class="description">Nosso eterno São Paulo, o melhor time do mundo!</div>
+            <label for="tamanho-2">Tamanho:</label>
+            <select class="tamanho" id="tamanho-2">
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+            </select>
+            <a href="#" class="button">R$ 299,99</a>
+            <!-- Botões de carrinho -->
+            <div class="cart-controls">
+                <button class="decrease">-</button>
+                <span class="quantity">0</span>
+                <button class="increase">+</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="src/Imagens/FLA.jpg" alt="Camisa3">
+            <div class="title">Camisa Flamengo</div>
+            <div class="description">Flamengo, Rei do Campeonato Carioca Ainda Cria!</div>
+            <label for="tamanho-3">Tamanho:</label>
+            <select class="tamanho" id="tamanho-3">
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+            </select>
+            <a  class="button">R$ 299,99</a>
+            <!-- Botões de carrinho -->
+            <div class="cart-controls">
+                <button class="decrease">-</button>
+                <span class="quantity">0</span>
+                <button class="increase">+</button>
+            </div>
+          </div>
+        
+        </div>
+        <p></p>
+                <!-- segunda seção de produtos -->
+        <div class="container">
+          <p>  
+          <div class="card">
+                <img src="src/Imagens/FLU.jpg" alt="Camisa4">
+                <div class="title">Camisa Fluminense</div>
+                <div class="description">Fluminense, não subestime, o segundo tricolor!</div> 
+                <label for="tamanho-4">Tamanho:</label>
+                <select class="tamanho" id="tamanho-4">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <a href="#" class="button">R$ 299,99</a>
+                    <!-- Botões de carrinho -->
+                <div class="cart-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+          </div>
+       
+            <div class="card">
+                <img src="src/Imagens/GRE.jpg" alt="Camisa5">
+                <div class="title">Camisa Grêmio</div>
+                <div class="description">Nosso eterno Grêmio, Que fase que tá o Grêmio!</div>
+                <label for="tamanho-5">Tamanho:</label>
+                <select class="tamanho" id="tamanho-5">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <a href="#" class="button">R$ 299,99</a>
+                <!-- Botões de carrinho -->
+                <div class="cart-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="src/Imagens/PAL.jpg" alt="Camisa6">
+                <div class="title">Camisa Palmeiras</div>
+                <div class="description">51° títulos pulsam no coração palmeirense, glorioso em verdão</div>
+                <label for="tamanho-6">Tamanho:</label>
+                <select class="tamanho" id="tamanho-6">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <a href="#" class="button">R$ 299,99</a>
+                <!-- Botões de carrinho -->
+                <div class="cart-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+                    <!-- Terceira seção de produtos -->
+        <div class="container">
+          <p>  
+          <div class="card">
+                <img src="src/Imagens/SAN.jpg" alt="Camisa7">
+                <div class="title">Camisa Santos</div>
+                <div class="description">Santos, lar do eterno Rei Pelé! Onde a magia do futebol se consagrou. </div> 
+                <label for="tamanho-4">Tamanho:</label>
+                <select class="tamanho" id="tamanho-4">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <a href="#" class="button">R$ 299,99</a>
+                    <!-- Botões de carrinho -->
+                <div class="cart-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+          </div>
+       
+            <div class="card">
+                <img src="src/Imagens/CRU.jpg" alt="Camisa8">
+                <div class="title">Camisa Cruzeiro</div>
+                <div class="description">Melhor aposentadoria do mundo, só reliquia lá </div>
+                <label for="tamanho-5">Tamanho:</label>
+                <select class="tamanho" id="tamanho-5">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <a href="#" class="button">R$ 299,99</a>
+                <!-- Botões de carrinho -->
+                <div class="cart-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="src/Imagens/VAS.jpg" alt="Camisa9">
+                <div class="title">Camisa Vasco</div>
+                <div class="description">Vasco, Gigante Vasco, caravela de campeam!</div>
+                <label for="tamanho-6">Tamanho:</label>
+                <select class="tamanho" id="tamanho-6">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+                <a href="#" class="button">R$ 299,99</a>
+                <!-- Botões de carrinho -->
+                <div class="cart-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">0</span>
+                    <button class="increase">+</button>
+                </div>
+            </div>
+
+        </div>    
+    </section>
+    <!-- Historia-->
+    <section class="historia" id="Sobre">
+        <p></p>
+        <div class="purple-shape"></div>
+        <div class="history-content">
+            <h1>Nossa Historia:</h1>
+            <h2>Era uma vez...</h2>
+            <p>Em meio à crescente paixão nacional pelo futebol e à valorização do mercado esportivo brasileiro, a Manto Nacional nasceu em março de 2025, com a missão de conectar torcedores e atletas amadores à identidade vibrante dos clubes brasileiros.</p>
+            <p>Fundada por três amigos universitários apaixonados por futebol, a ideia surgiu a partir de uma observação simples: apesar da imensa popularidade do esporte no Brasil, poucas lojas ofereciam uma experiência especializada e acessível voltada exclusivamente ao futebol nacional. Grandes redes focavam em clubes europeus, enquanto os times brasileiros, suas camisas, acessórios e histórias, eram tratados como produtos secundários.</p>
+            <p>Com essa lacuna em mente, a Manto Nacional começou suas atividades em uma pequena loja física em Belo Horizonte, Minas Gerais, oferecendo camisas oficiais de clubes de todas as divisões, produtos licenciados, artigos de treino, moda casual com tema futebolístico e até coleções retrô. A loja também valorizava a cultura local do futebol, com itens personalizados de times regionais e coleções inspiradas em ídolos históricos do esporte.</p>
+            <p>Hoje, ainda em 2025, a Manto Nacional está em pleno crescimento, com planos de abrir novas unidades físicas nas capitais brasileiras, expandir a linha de produtos próprios e firmar colaborações exclusivas com clubes e atletas. A loja representa não apenas um negócio promissor, mas também um movimento que resgata e valoriza a paixão pelo futebol brasileiro em todas as suas formas — das arquibancadas aos campos de várzea.</p>
+        </div>
+        </div>
+    <!-- i -->
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h5>MANTO NACIONAL&copy; 2025</h5><br>
+            <p> &star; Cruzeiro do Sul - Projeto - Aplicações Para Internet &star; </p><br>
+            <p>Todos os direitos reservados.</p>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+        </div>
+    </footer>
+            <!-- Botão flutuante -->
+        <a href="#" class="floating-button" title="Voltar ao topo">
+            <i class="fa-solid fa-home"></i>
+        </a>
+            <!-- Botão de carrinho flutuante -->
+        <a href="src/outros/carrinho.html" class="cart-floating-button" title="Ver Carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+        </a>    
+  </body> 
+</html>
+``` 
