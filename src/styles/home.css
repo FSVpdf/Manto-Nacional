@@ -274,3 +274,9 @@ nav {
     margin-top: 5px;
     margin-bottom:5px; ;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
